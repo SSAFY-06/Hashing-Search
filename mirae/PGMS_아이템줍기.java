@@ -34,11 +34,10 @@ public class PGMS_아이템줍기 {
 				}
 			}
 		}
-		print();
 		
 		Queue<Point> queue = new ArrayDeque<Point>();
         queue.add(new Point(characterY*2, characterX*2, 0));
-        map[characterX*2][characterY*2] = 0;
+        map[characterY*2][characterX*2] = 0;
         
         while(!queue.isEmpty()) {
         	Point cur = queue.poll();
